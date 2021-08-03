@@ -82,7 +82,7 @@ namespace Week5Day1Ex1
         private void btnDel_Click(object sender, EventArgs e)
         {
             //Step 26.  Lets delete each row
-            stulist.Remove(stuGrid.CurrentRow.Index);
+            stulist.RemoveAt(stuGrid.CurrentRow.Index);
             //From Student List > Remove (Inside Student Grid > Row Selected)
             stuGrid.DataSource = null;
             stuGrid.DataSource = stulist;
